@@ -1,0 +1,43 @@
+model = "gpt-5.3-codex"
+model_reasoning_effort = "xhigh"
+model_reasoning_summary = "detailed"
+model_verbosity = "high"
+approval_policy = "on-failure"
+sandbox_mode = "workspace-write"
+web_search = "cached"
+project_doc_max_bytes = 65536
+personality = "pragmatic"
+
+[projects."/"]
+trust_level = "untrusted"
+
+[projects."/Users/heosehyeon/프로젝트/Abstract building/Account-Abstraction-Vulnerability-Scoring"]
+trust_level = "trusted"
+
+[projects."/Users/heosehyeon/프로젝트/memecore_hackerton/memeX"]
+trust_level = "trusted"
+
+[projects."/Users/heosehyeon/SNS/일정관리웹/Planfit"]
+trust_level = "trusted"
+
+[projects."/Users/heosehyeon/SNS/일정관리웹/Graph-Link-Types"]
+trust_level = "trusted"
+
+[projects."/Users/heosehyeon/SNS/일정관리웹"]
+trust_level = "untrusted"
+
+[projects."/Users/heosehyeon/프로젝트/upside 후속지원/Account-Abstraction-Vulnerability-Scoring"]
+trust_level = "untrusted"
+
+[projects."/Users/heosehyeon/프로젝트/upside 후속지원"]
+trust_level = "trusted"
+
+[projects."/Users/heosehyeon/프로젝트/Re-Mind"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.1-codex-max" = "gpt-5.2-codex"
+"gpt-5.2" = "gpt-5.2-codex"
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"

@@ -1,0 +1,17 @@
+prefix_rule(
+  pattern = ["git", "push", "--force"],
+  decision = "forbidden",
+  justification = "강제 푸시는 사용자 명시 승인 후 수동으로 수행."
+)
+
+prefix_rule(
+  pattern = ["rm", "-rf"],
+  decision = "prompt",
+  justification = "파괴적 삭제는 매번 승인 필요."
+)
+
+prefix_rule(
+  pattern = ["gh", "pr", "view"],
+  decision = "prompt",
+  justification = "외부 조회 명령은 승인 후 실행."
+)
